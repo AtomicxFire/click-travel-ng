@@ -1,0 +1,20 @@
+<div class="content">
+  <div class="background-white">
+    <h1 class="title">{{ title }} {{ destinationCode }}</h1>
+    <div
+      *ngFor="let ticket of tickets | async; trackBy: trackByTicket"
+    >
+      <p>Passenger: {{ ticket.passenger }}</p>
+      <p>Flight: {{ ticket.flight }}</p>
+      <p>From: {{ ticket.from }}</p>
+      <p>Class: {{ ticket.class }}</p>
+      <p>Gate: {{ ticket.gate }}</p>
+      <p>Time: {{ ticket.time }}</p>
+      <p>Seat: {{ ticket.seat }}</p>
+      <p>Number: {{ ticket.number }}</p>
+
+      <p>To: <b>{{ ticket.to }}</b></p>
+      <hr>
+    </div>
+  </div>
+</div>
