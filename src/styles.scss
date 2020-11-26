@@ -1,3 +1,10 @@
+
+/* Importing Custom SCSS files. */
+@import '../src/assets/scss/modules/_variables.scss';
+@import '../src/assets/scss/modules/_global.scss';
+@import '../src/assets/scss/modules/_custom.scss';
+
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -66,10 +73,13 @@ html {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 !important;
+  padding: 0 !important;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .toolbar {
@@ -116,4 +126,14 @@ app-home {
 
 body {
   height: 100%;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+
+.hr-vertical {
+  width: 2px;
+  height: 250px;
+  background-color: #555457;
 }

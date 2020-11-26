@@ -1,0 +1,151 @@
+<h1>Méthode Bootstrap</h1>
+<div class="flex flex-col has-margin-3 has-border-grey-color-1-6">
+  <div class="flex flex-row">
+    <div class="flex flex-col has-ticket-color has-padding-left-3 col-9">
+      <div class="has-text-white-color is-normal-text">
+        Boarding Pass
+      </div>
+      <div class="has-text-white-color is-small-text">
+        {{ ticket.class }}
+      </div>
+    </div>
+    <div class="flex flex-col has-ticket-color has-padding-left-3 col-3 has-border-left-2">
+      <div class="has-text-white-color is-normal-text">
+        Boarding Pass
+      </div>
+      <div class="has-text-white-color is-small-text">
+        {{ ticket.class }}
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row has-white-dark-color">
+    <div class="flex flex-col col-9">
+      <div class="flex flex-col has-margin-5">
+        <div class="has-text-grey-color is-small-text">
+          PASSENGER
+        </div>
+        <div class="is-small-text">
+          {{ ticket.passenger }}
+        </div>
+      </div>
+      <div class="flex flex-row">
+        <div class="flex flex-col has-margin-5">
+          <div class="has-text-grey-color is-small-text">
+            FLIGHT
+          </div>
+          <div class="is-small-text">
+            {{ ticket.flight }}
+          </div>
+        </div>
+        <div class="flex flex-col has-margin-5">
+          <div class="has-text-grey-color is-small-text">
+            FROM
+          </div>
+          <div class="is-small-text">
+            {{ ticket.from }}
+          </div>
+        </div>
+        <div class="flex flex-col has-margin-5">
+          <div class="has-text-grey-color is-small-text">
+            TO
+          </div>
+          <div class="is-small-text">
+            {{ ticket.to }}
+          </div>
+        </div>
+        <div class="flex flex-col has-margin-5">
+          <div class="has-text-grey-color is-small-text">
+            CLASS
+          </div>
+          <div class="is-small-text">
+            {{ ticket.class }}
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row items-center">
+        <div class="flex flex-col has-margin-5 col-auto">
+          <div class="has-text-grey-color is-small-text">
+            GATE
+          </div>
+          <div class="is-small-text has-white-color has-padding-2">
+            {{ ticket.gate }}
+          </div>
+        </div>
+        <div class="flex flex-col has-margin-5 col-auto">
+          <div class="has-text-grey-color is-small-text">
+            TIME
+          </div>
+          <div class="is-small-text has-white-color has-padding-2">
+            {{ ticket.time.split(' ')[0] }}
+          </div>
+        </div>
+        <div class="flex flex-col has-margin-5 col-auto">
+          <div class="has-text-grey-color is-small-text">
+            SEAT
+          </div>
+          <div class="is-small-text has-white-color has-padding-2">
+            {{ ticket.seat }}
+          </div>
+        </div>
+        <img src="../../assets/cb2.jpg" height="50" class="col-auto"/>
+      </div>
+    </div>
+    <div class="flex flex-col col-auto has-border-left-2">
+      <div class="flex flex-col has-margin-5">
+        <div class="has-text-grey-color is-small-text">
+          PASSENGER
+        </div>
+        <div class="is-small-text">
+          {{ ticket.passenger }}
+        </div>
+      </div>
+      <div class="flex flex-row">
+        <div class="flex flex-col has-margin-5">
+          <div class="has-text-grey-color is-small-text">
+            GATE
+          </div>
+          <div class="is-small-text has-white-color has-padding-2">
+            {{ ticket.gate }}
+          </div>
+        </div>
+        <div class="flex flex-col has-margin-5">
+          <div class="has-text-grey-color is-small-text">
+            TIME
+          </div>
+          <div class="is-small-text has-white-color has-padding-2">
+            {{ ticket.time.split(' ')[0] }}
+          </div>
+        </div>
+        <div class="flex flex-col has-margin-5">
+          <div class="has-text-grey-color is-small-text">
+            SEAT
+          </div>
+          <div class="is-small-text has-white-color has-padding-2">
+            {{ ticket.seat }}
+          </div>
+        </div>
+      </div>
+      <img src="../../assets/cb2.jpg" height="50" width="150"/>
+    </div>
+  </div>
+  <div class="flex has-ticket-color">
+
+  </div>
+</div>
+
+<h1>Méthode absolute</h1>
+<div style="position: relative;">
+  <img src="../../assets/ticket-example.jpg" style="position: absolute" width="750" />
+  <p style="position: absolute; top: 307px; left: 85px;">{{ ticket.gate }}<p>
+  <p style="position: absolute; top: 236px; left: 575px;">{{ ticket.gate }}<p>
+  <p style="position: absolute; top: 307px; left: 245px;">{{ ticket.seat }}<p>
+  <p style="position: absolute; top: 236px; left: 692px;">{{ ticket.seat }}<p>
+  <p style="position: absolute; top:307px; left: 150px;">{{ ticket.time.split(" ")[1] }}<p>
+  <p style="position: absolute; top: 236px; left: 625px;">{{ ticket.time.split(" ")[1] }}<p>
+  <p style="position: absolute; top: 165px; left: 65px;">{{ ticket.passenger }}<p>
+  <p style="position: absolute; top: 165px; left: 555px;">{{ ticket.passenger }}<p>
+  <p style="position: absolute; top: 227px; left: 65px;">{{ ticket.flight }}<p>
+  <p style="position: absolute; top: 227px; left: 177px;">{{ ticket.from }}<p>
+  <p style="position: absolute; top: 227px; left: 300px;">{{ ticket.to }}<p>
+  <p style="position: absolute; top: 227px; left: 415px;">{{ ticket.class }}<p>
+</div>

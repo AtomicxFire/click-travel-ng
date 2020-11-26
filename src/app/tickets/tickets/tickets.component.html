@@ -1,8 +1,9 @@
 <div class="content">
-  <div class="background-white">
+  <div class="background-white w-100">
     <h1 class="title">{{ title }} {{ destinationCode }}</h1>
     <div
       *ngFor="let ticket of tickets | async; trackBy: trackByTicket"
+      (click)="selectTicket(ticket)"
     >
       <p>Passenger: {{ ticket.passenger }}</p>
       <p>Flight: {{ ticket.flight }}</p>
@@ -15,6 +16,10 @@
 
       <p>To: <b>{{ ticket.to }}</b></p>
       <hr>
+    </div>
+    <hr>
+    <div *ngIf="selectedTicket">
+      <one-ticket [ticket]="selectedTicket"></one-ticket>
     </div>
   </div>
 </div>

@@ -1,0 +1,185 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  position: absolute;
+  margin: 0;
+  font-family: $monhey-font,"Helvetica Neue", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  width: fit-content;
+  min-width: 100%;
+  width: 100%;
+  background-repeat: no-repeat!important;
+  background: $primary-secondary-gradient;
+  mix-blend-mode: normal;
+}
+
+
+.mat-dialog-container {
+  padding: 0 !important;
+}
+
+
+// Overwrite component property css
+.module-management {
+  .mat-form-field-should-float, .mat-focused {
+    .mat-form-field-prefix span svg {
+      fill: $secondary-color !important;
+    }
+
+     .mat-form-field-suffix span svg {
+      fill: $secondary-color !important;
+    }
+
+    .mat-form-field-infix {
+      color: $secondary-color !important;
+
+      .mat-form-field-label-wrapper .mat-form-field-label mat-label {
+        color: $secondary-color !important;
+      }
+
+      .mat-input-element::-webkit-calendar-picker-indicator {
+        filter: invert(73%) sepia(25%) saturate(5354%) hue-rotate(38deg) brightness(101%) contrast(101%);
+      }
+
+      .mat-select-value-text span {
+        color: $secondary-color !important;
+      }
+    }
+
+    .mat-form-field-underline {
+      background-color: $secondary-color !important;
+    }
+
+    .mat-form-field-flex {
+      .mat-form-field-outline-start, .mat-form-field-outline-gap, .mat-form-field-outline-end {
+        border: 2px solid $secondary-color;
+      }
+
+      .mat-form-field-outline-start, .mat-form-field-outline-gap {
+        border-right-style: none;
+      }
+
+      .mat-form-field-outline-end, .mat-form-field-outline-gap {
+        border-left-style: none;
+      }
+
+      .mat-form-field-outline-gap {
+        border-top-style: none;
+      }
+    }
+  }
+
+  .mat-form-field-infix {
+    padding: 0.50em 0 !important;
+  }
+
+  .mat-form-field-hide-placeholder {
+    .mat-form-field-label-wrapper {
+      padding: 0.25em 0 !important;
+
+      .mat-form-field-label {
+        top: 1.60em !important;
+      }
+    }
+
+    .mat-form-field-prefix span svg {
+      fill: $grey-color !important;
+    }
+
+    .mat-form-field-suffix span svg {
+      fill: $grey-color !important;
+    }
+
+    .mat-form-field-infix {
+      .mat-form-field-label-wrapper .mat-form-field-label mat-label {
+        color: $grey-color !important;
+      }
+    }
+
+    .mat-form-field-underline {
+      background-color: $grey-color !important;
+    }
+
+    .mat-form-field-flex {
+      .mat-form-field-outline-start, .mat-form-field-outline-gap, .mat-form-field-outline-end {
+        border: 2px solid $grey-color;
+      }
+
+      .mat-form-field-outline-start, .mat-form-field-outline-gap {
+        border-right-style: none;
+      }
+
+      .mat-form-field-outline-end, .mat-form-field-outline-gap {
+        border-left-style: none;
+      }
+    }
+  }
+
+  .mat-placeholder-required {
+    color: $error-color;
+    font-weight: 600;
+  }
+
+  .mat-form-field-label mat-label {
+    font-weight: normal;
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0.5em !important;
+  }
+
+  .mat-form-field-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .mat-tab-labels {
+    :first-child {
+      border-top-left-radius: 4px;
+    }
+
+    :last-child {
+      border-top-right-radius: 4px;
+    }
+
+    .mat-tab-label {
+      width: 50%;
+      opacity: 1;
+      background-color: $white-color;
+      border: 1px solid $secondary-color;
+
+      .mat-tab-label-content {
+        color: $secondary-color;
+      }
+    }
+
+    .mat-tab-label-active {
+      background-color: $secondary-color;
+
+      .mat-tab-label-content {
+        color: $white-color;
+      }
+    }
+  }
+
+  .mat-ink-bar {
+    background-color: $secondary-dark-color !important;
+  }
+
+  .mat-tab-group {
+    width: 90%;
+  }
+
+  .mat-tab-body-wrapper {
+    border-left: 1px solid $secondary-color;
+    border-right: 1px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    max-height: 300px;
+    overflow: scroll;
+  }
+}

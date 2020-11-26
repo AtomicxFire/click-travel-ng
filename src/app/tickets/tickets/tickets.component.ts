@@ -20,6 +20,8 @@ export class TicketsComponent implements OnInit {
 
   public tickets: Observable<Ticket[]>
 
+  public selectedTicket: Ticket;
+
   ngOnInit(): void {
     this._route.params.subscribe(params => {
       this.destinationCode = params['code']; // (+) converts string 'id' to a number
@@ -30,6 +32,10 @@ export class TicketsComponent implements OnInit {
 
   trackByTicket(index: number, el: any): number {
     return el.flight + el.seat;
+  }
+
+  selectTicket(ticket: Ticket) {
+    this.selectedTicket = ticket
   }
 
 }

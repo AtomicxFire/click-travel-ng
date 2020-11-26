@@ -1,0 +1,38 @@
+// Main color variables
+
+$ticket-color: #34a7dd;
+
+$primary-color: #555457;
+$secondary-color: #84cf00;
+$white-color: #FCFCFC;
+$white-dark-color: #ededed;
+$grey-color: #555457;
+
+// Variant color variables
+$primary-light-color: #647d3a;
+$primary-dark-color: #3D3C40;
+$secondary-dark-color: #74a61d;
+$primary-lighter-color: #67666A;
+
+// Information color
+$error-color: #CC3300;
+$error-dark-color: #A72A00;
+$valid-color: #339900;
+$valid-dark-color: #297A01;
+$warning-color: #FFCC00;
+
+// Linear gradient
+$primary-secondary-gradient: linear-gradient(162.46deg, $secondary-color 0%, $primary-color 100%);
+$white-gradient: linear-gradient(162.46deg, $white-color 0%, $white-dark-color 100%);
+$primary-gradient: linear-gradient(119.84deg, $primary-color 0%, $primary-dark-color 100%);
+$primary-gradient: linear-gradient(119.84deg, $primary-color 0%, $primary-dark-color 100%);
+$secondary-gradient: linear-gradient(162.46deg, $secondary-color 0%, $primary-light-color 100%);
+$primary-light-gradient: linear-gradient(162.46deg, $primary-lighter-color 0%, $primary-color 100%);
+$error-gradient: linear-gradient(162.46deg, $error-color 0%, $error-dark-color 100%);
+$valid-gradient: linear-gradient(162.46deg, $valid-color 0%, $valid-dark-color 100%);
+
+// Font
+$monhey-font: Quicksand;
+
+// Other
+$main-box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
